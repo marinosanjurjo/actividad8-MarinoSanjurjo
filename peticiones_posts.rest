@@ -1,0 +1,30 @@
+### Obtener todos los posts
+GET http://localhost:3000/api/posts
+
+### Obtener un post
+GET http://localhost:3000/api/posts/1
+
+### Crear un post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "titulo": "Mi tercer post",
+    "descripcion": "Este es el contenido del tercer post",
+    "categoria": "Tecnología3",
+    "autor_id": 6
+}
+
+### Actualizar un post
+PUT http://localhost:3000/api/posts/1
+Content-Type: application/json
+
+{
+    "titulo": "Mi primer post actualizado",
+    "descripcion": "Contenido actualizado del post",
+    "categoria": "Programación",
+    "autor_id": 1
+}
+
+### Eliminar un autor
+DELETE http://localhost:3000/api/posts/8

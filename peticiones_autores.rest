@@ -9,8 +9,8 @@ POST http://localhost:3000/api/autores
 Content-Type: application/json
 
 {
-    "nombre": "Marino Sanjurjo",
-    "email": "marinoooo@gmail.com",
+    "nombre": "Jose Perez",
+    "email": "jose@gmail.com",
     "imagen": "https://placehold.co/400"
 }
 
