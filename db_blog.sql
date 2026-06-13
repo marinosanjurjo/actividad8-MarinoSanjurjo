@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `db_blog`.`posts` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `titulo` VARCHAR(255) NOT NULL,
   `descripcion` LONGTEXT NOT NULL,
-  `fecha de creacion` DATETIME NOT NULL DEFAULT NOW(),
+  `fecha_creacion` DATETIME NOT NULL DEFAULT NOW(),
   `categoria` VARCHAR(100) NOT NULL,
   `autor_id` INT NOT NULL,
   PRIMARY KEY (`id`),
