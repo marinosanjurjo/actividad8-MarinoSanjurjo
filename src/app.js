@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 // Route configuration
-// app.use('/api', require('./routes/api.routes'));
+app.use('/api/autores', require('./routes/api/autores.routes'));
 
 // 404 handler
 app.use((req, res, next) => {

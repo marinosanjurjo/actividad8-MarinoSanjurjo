@@ -1,0 +1,28 @@
+### Obtener todos los autores
+GET http://localhost:3000/api/autores
+
+### Obtener un autor
+GET http://localhost:3000/api/autores/1
+
+### Crear un autor
+POST http://localhost:3000/api/autores
+Content-Type: application/json
+
+{
+    "nombre": "Marino Sanjurjo",
+    "email": "marinoooo@gmail.com",
+    "imagen": "https://placehold.co/400"
+}
+
+### Actualizar un autor
+PUT http://localhost:3000/api/autores/5
+Content-Type: application/json
+
+{
+    "nombre": "Marino Sanjurjo Actualizado",
+    "email": "marinooo@gmail.com",
+    "imagen": "https://placehold.co/400"
+}
+
+### Eliminar un autor
+DELETE http://localhost:3000/api/autores/5
