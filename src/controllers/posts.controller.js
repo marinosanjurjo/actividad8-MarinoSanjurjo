@@ -17,6 +17,16 @@ const getById = async (req, res) => {
     res.json(req.post);
 };
 
+// Recuperar posts de un autor
+const getByAutorId = async (req, res) => {
+    const { autorId } = req.params;
+    const posts = await PostsModel.selectByAutorId(autorId);
+    res.json({
+        message: `Posts del autor ${req.autor.nombre}`,
+        posts: posts
+    })
+}
+
 // Crear un post
 const create = async (req, res) => {
     const result = await PostsModel.insert(req.body);
@@ -34,7 +44,7 @@ const edit = async (req, res) => {
     const post = await PostsModel.selectById(postId);
     res.json({
         message: 'Post actualizado correctamente',
-        post
+        post: post
     });
 };
 
@@ -51,6 +61,7 @@ const remove = async (req, res) => {
 module.exports = {
     getAll,
     getById,
+    getByAutorId,
     create,
     edit,
     remove
